@@ -1,5 +1,7 @@
 package com.example.myapplicationdata
 
+import android.app.Activity
+import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplicationdata.database.SubscriberRepo
@@ -14,14 +16,15 @@ class SubscriberViewMoelFactory(private var repository: SubscriberRepo): ViewMod
         }
     }
 
-   /* fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return if (modelClass == SubsViewModel::class.java) {
-                SubsViewModel(repository) as T
+
+    /* fun <T : ViewModel?> create(modelClass: Class<T>): T {
+             return if (modelClass == SubsViewModel::class.java) {
+                 SubsViewModel(repository) as T
+              }
+             else {
+                 super.create(modelClass)
              }
-            else {
-                super.create(modelClass)
-            }
-         }*/
+          }*/
             /*if(modelClass.isAssignableFrom(SubsViewModel::class.java)){
                 return SubsViewModel(repository) as T
             }

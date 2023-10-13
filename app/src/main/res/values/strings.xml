@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">MyApplicationData</string>
+    <string name="app_name">Student Data</string>
+    <string name="studentName">Subscriber\'s name</string>
+    <string name="studentEmail">Subscriber\'s email</string>
+    <string name="btnSave">Save</string>
+    <string name="btnClear">Clear</string>
+
 </resources>
