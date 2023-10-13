@@ -47,13 +47,6 @@ class MainActivity : ComponentActivity() {
         binding.subscriberRecyclerView.itemAnimator = DefaultItemAnimator()
         binding.subscriberRecyclerView.adapter = adapter
 
-     /*   binding.subscriberRecyclerView.layoutManager = LinearLayoutManager(this)
-        adapter = StudentRecyclerView {  }() { selectedItem: Subscriber ->
-            listItemClicked(
-                selectedItem
-            )
-        }*/
-        binding.subscriberRecyclerView.adapter = adapter
         displaySubscribersList()
     }
 
