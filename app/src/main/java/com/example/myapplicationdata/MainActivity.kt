@@ -31,10 +31,6 @@ class MainActivity : ComponentActivity() {
         subscriberViewModel = ViewModelProvider(this, factory)[SubsViewModel::class.java]
         binding.myViewModel = subscriberViewModel
 
-        binding.saveOrUpdateButton.setOnClickListener{
-            subscriberViewModel.saveOrUpdate()
-        }
-
         subscriberViewModel.message.observe(this, Observer {
             it.getContentIfNotHandled()?.let {
                 Toast.makeText(this, it, Toast.LENGTH_LONG).show()

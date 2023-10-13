@@ -39,6 +39,9 @@ class SubsViewModel(private val repo: SubscriberRepo) : ViewModel() {
         clearAllOrDeleteButtonText.value = "Delete"
     }
     fun saveOrUpdate() {
+        inputName.value = "krishna"
+        inputEmail.value = "Krishna@gmail.com"
+
         if(inputName.value == null){
             statusMessage.value = Event("Please enter subscriber's name")
         } else if (inputEmail.value == null){

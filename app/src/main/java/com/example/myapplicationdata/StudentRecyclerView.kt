@@ -12,9 +12,7 @@ class StudentRecyclerView(private val clickListener: (Subscriber) -> Unit) :  Re
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val layoutInflater = LayoutInflater.from(parent.context)
         val binding: ItemsRowBinding = ItemsRowBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-
         return MyViewHolder(binding)
     }
 
